@@ -1,0 +1,25 @@
+{
+  "name": "lexart-scrapper",
+  "version": "1.0.0",
+  "description": "Full Stack project for Lexart Labs selection process",
+  "main": "index.js",
+  "scripts": {
+    "compose:up": "(cd app && docker-compose up -d --build)",
+    "compose:down": "(cd app && docker-compose down --remove-orphans)",
+    "compose:up:dev": "(cd app && docker-compose -f docker-compose.dev.yml up -d --build)",
+    "compose:down:dev": "(cd app && docker-compose -f docker-compose.dev.yml down --remove-orphans)",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Data",
+    "scraping",
+    "typescript",
+    "react",
+    "node.js",
+    "express",
+    "mongodb",
+    "mongoose"
+  ],
+  "author": "Jessy Damasceno",
+  "license": "ISC"
+}
