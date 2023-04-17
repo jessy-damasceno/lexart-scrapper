@@ -37,8 +37,6 @@ const Header: FC<IProps> = ({ infoFetch, isLoading }) => {
 		};
 	}, [url, category]);
 
-	console.log(isDisabled);
-
 	return (
 		<Box component='form' noValidate sx={{ mt: 1, mb: 4 }}>
 			<TextField

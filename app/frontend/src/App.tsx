@@ -23,7 +23,7 @@ function App() {
 					)
 				);
 				setIsLoading(false);
-				console.log(products);
+				(products);
 			});
 	}
 
