@@ -5,6 +5,9 @@ import axios from 'axios';
 import Home from './pages/Home';
 import type IProduct from './interfaces/IProduct';
 import { Grid } from '@mui/material';
+import 'dotenv/config';
+
+const API_URL = process.env.BASE_API_URL || 'http://localhost:3001';
 
 function App() {
 	const [products, setProducts] = useState([]);
@@ -13,7 +16,7 @@ function App() {
 	function infoFetch(url: string, category: string, filter: string) {
 		setIsLoading(true);
 		axios
-			.get(`http://localhost:3001/products?url=${url}&category=${category}`)
+			.get(`${API_URL}products?url=${url}&category=${category}`)
 			.then(({ data }) => {
 				setProducts(
 					data.data.filter((e: IProduct) =>
