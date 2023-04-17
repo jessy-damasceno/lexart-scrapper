@@ -5,9 +5,8 @@ import axios from 'axios';
 import Home from './pages/Home';
 import type IProduct from './interfaces/IProduct';
 import { Grid } from '@mui/material';
-import 'dotenv/config';
 
-const API_URL = process.env.BASE_API_URL || 'http://localhost:3001';
+const API_URL = 'https://lexart-scrapper-production.up.railway.app';
 
 function App() {
 	const [products, setProducts] = useState([]);
