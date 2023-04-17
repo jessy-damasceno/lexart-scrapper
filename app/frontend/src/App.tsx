@@ -23,7 +23,6 @@ function App() {
 					)
 				);
 				setIsLoading(false);
-				(products);
 			});
 	}
 
