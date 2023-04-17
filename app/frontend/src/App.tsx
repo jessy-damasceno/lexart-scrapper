@@ -15,7 +15,7 @@ function App() {
 	function infoFetch(url: string, category: string, filter: string) {
 		setIsLoading(true);
 		axios
-			.get(`${API_URL}products?url=${url}&category=${category}`)
+			.get(`${API_URL}/products?url=${url}&category=${category}`)
 			.then(({ data }) => {
 				setProducts(
 					data.data.filter((e: IProduct) =>
